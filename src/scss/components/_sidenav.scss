@@ -3,25 +3,40 @@
 // 
 
 #sideNav {
+
+    background-color: $dark;
+
     padding-left: 1rem;
     padding-right: 1rem;
 
-    .navbar-nav .nav-item .nav-link {
+    .navbar-nav .nav-item .nav-link, .navbar-brand {
         font-weight: 800;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
     }
 
     .navbar-toggler {
+	color: $light;
         &:focus {
             outline-color: lighten($primary, 15%);
         }
     }
+
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+	color: $light;
+	&:hover {
+	    color: lighten($primary, 15%);
+	}
+    }
+    
 }
 
 @include media-breakpoint-up(lg) {
     #sideNav {
-        padding-left: 0;
+	background-image: url("/images/leather.png") !important;
+	background-size: 100% 100%;
+
+	padding-left: 0;
         padding-right: 0;
         text-align: center;
         position: fixed;
@@ -65,6 +80,10 @@
 
                     .nav-link {
                         display: block;
+			color: $light;
+			&:hover {
+			    color: lighten($primary, 15%);
+			}
                     }
                 }
             }

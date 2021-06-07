@@ -17,3 +17,16 @@
 
 // Sections
 @import "./sections/resume-section.scss";
+
+body {
+    color: $dark;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
