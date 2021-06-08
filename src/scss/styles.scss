@@ -33,4 +33,11 @@ a:hover {
 
 .news-title {
     text-transform: none;
+    font-weight: 500;
+}
+
+.news-icon {
+    color: $primary;
+    width: 2em;
+    height: 2em;
 }
