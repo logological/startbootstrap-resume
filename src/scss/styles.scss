@@ -21,6 +21,7 @@
 // -------------------------------------------------------------------------
 // Custom styles for logological.org
 // --------------------------------------------------------------------------
+
 body {
     color: $dark;
 }
@@ -44,6 +45,12 @@ a:hover {
     height: 2em;
 }
 
+blockquote {
+  margin: 2em auto;
+  padding: 2rem;
+  background: $gray-200;
+  border-left: thick solid $gray-800;
+}
 
 /* Carousel settings */
 @media (max-width: 767px) {
