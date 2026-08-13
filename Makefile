@@ -1,9 +1,9 @@
-all:	dist/css/styles.css dist/js/scripts.js | install
+all:	dist/css/styles.css dist/js/scripts.js
 
-dist/css/styles.css:	$(wildcard src/scss/*.scss) $(wildcard src/scss/*/*.scss) scripts/build-scripts.js scripts/render-scripts.js
+dist/css/styles.css:	install
 	npm run build:scss
 
-dist/js/scripts.js:	$(wildcard src/js/*.js) scripts/build-scss.js scripts/render-scss.js
+dist/js/scripts.js:	install
 	npm run build:scripts
 
 clean: 
